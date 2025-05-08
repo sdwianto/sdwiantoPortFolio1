@@ -58,7 +58,7 @@ const Skill = () => {
     <div
       ref={skillRef}
       className='custom-container flex flex-wrap items-center gap-10 px-4 py-40 md:gap-14.5 md:px-32 md:py-20'
-      id='skill'
+      id='skills'
     >
       {/* Left Section */}
 

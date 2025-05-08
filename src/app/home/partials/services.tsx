@@ -29,7 +29,7 @@ const Services = () => {
       label='SERVICE'
       title='MY SERVICE EXPERTISE'
       description='Creating modern, intuitive, and visually consistent web experiences that align with industry trends and user expectations.'
-      id='services'
+      id='service'
       className='md:text-lg-medium text-md-medium flex-wrap gap-4 px-4 py-10 text-left md:gap-16 md:px-32 md:py-30'
       headerClassName='flex flex-col md:flex-row md:items-start md:justify-between gap-4'
       labelClassName='text-sm-medium md:text-md-medium'

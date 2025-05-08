@@ -35,7 +35,7 @@ const Hero = () => {
           asChild
           className='md:px-29.375 text-sm-extrabold md:text-md-bold bg-primary-200 my-10 mt-10 w-full whitespace-nowrap text-neutral-950 md:mt-15 md:mb-40.75 md:w-fit'
         >
-          <Link href='#'>HIRE ME</Link>
+          <Link href='#contact'>HIRE ME</Link>
         </Button>
       </div>
       {/* boxes */}

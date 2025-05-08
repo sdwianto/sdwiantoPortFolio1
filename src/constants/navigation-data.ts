@@ -9,16 +9,32 @@ export const navigationData: Navigation[] = [
     href: '#home',
   },
   {
+    label: 'Service',
+    href: '#service',
+  },
+  {
     label: 'About',
     href: '#about',
   },
   {
-    label: 'Skill',
-    href: '#skill',
+    label: 'Skills',
+    href: '#skills',
   },
   {
-    label: 'Projects',
-    href: '#projects',
+    label: 'Working',
+    href: '#working',
+  },
+  {
+    label: 'Experiece',
+    href: '#experience',
+  },
+  {
+    label: 'Portfolio',
+    href: '#portfolio',
+  },
+  {
+    label: 'Testimonials',
+    href: '#testimonials',
   },
   {
     label: 'FAQ',

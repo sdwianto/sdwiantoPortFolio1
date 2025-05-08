@@ -87,7 +87,7 @@ const Working = () => {
         asChild
         className='md:px-21.875 text-sm-bold md:text-md-bold bg-primary-200 mx-auto mt-0 mb-10 w-full text-neutral-950 md:mt-12 md:mb-20 md:w-fit'
       >
-        <Link href='#'>HIRE ME</Link>
+        <Link href='#contact'>HIRE ME</Link>
       </Button>
     </Section>
   );

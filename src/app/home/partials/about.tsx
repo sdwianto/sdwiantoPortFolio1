@@ -8,7 +8,7 @@ const AboutMe = () => {
   return (
     <div className='relative flex flex-col'>
       <Section
-        id='about-me'
+        id='about'
         label='ABOUT ME'
         title='CRAFTING SEAMLESS'
         description={
