@@ -19,7 +19,7 @@ interface FormStatusDialogProps extends React.ComponentProps<typeof Dialog> {
 
 const FormStatusDialog: React.FC<FormStatusDialogProps> = ({
   variant,
-  loading,
+
   ...props
 }) => {
   return (
