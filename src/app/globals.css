@@ -197,7 +197,7 @@ body {
 @layer components {
   .custom-container {
     margin: 0 auto;
-    @apply max-w-376 px-4 md:px-32;
+    @apply max-w-376 px-4 md:px-6;
   }
 }
 @keyframes scrollX {

@@ -8,15 +8,15 @@ export const navigationData: Navigation[] = [
     label: 'Home',
     href: '#home',
   },
-  {
-    label: 'Service',
-    href: '#service',
-  },
+
   {
     label: 'About',
     href: '#about',
   },
-
+  {
+    label: 'Skills',
+    href: '#skills',
+  },
   {
     label: 'Working',
     href: '#working',
