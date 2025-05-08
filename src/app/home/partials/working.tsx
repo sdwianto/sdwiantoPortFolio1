@@ -17,7 +17,7 @@ const Working = () => {
       id='working'
       label='WORKING'
       title='WHY CHOOSE ME?'
-      className='md:text-lg-medium text-md-medium flex-wrap gap-4 text-center md:gap-16 md:py-20'
+      className='md:text-lg-medium text-md-medium mt-[-40] flex-wrap gap-4 text-center md:gap-16 md:py-20'
       headerClassName='md:text-center gap-4 mt-10'
       titleClassName='display-md-extrabold md:display-2xl-extrabold text-neutral-25 md:mt-2'
     >
@@ -85,7 +85,7 @@ const Working = () => {
       </div>
       <Button
         asChild
-        className='md:px-21.875 text-sm-bold md:text-md-bold bg-primary-200 mx-auto mt-0 mb-10 w-full text-neutral-950 md:mt-12 md:mb-20 md:w-fit'
+        className='md:px-21.875 text-sm-bold md:text-md-bold bg-primary-200 mx-auto mt-0 mb-30 w-full text-neutral-950 md:mt-12 md:mb-20 md:w-fit'
       >
         <Link href='#contact'>HIRE ME</Link>
       </Button>
