@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 import { Button } from './button';
@@ -14,8 +15,6 @@ import {
 
 interface FormStatusDialogProps extends React.ComponentProps<typeof Dialog> {
   variant: 'success' | 'error';
-
-  loading?: boolean;
 }
 
 const FormStatusDialog: React.FC<FormStatusDialogProps> = ({
@@ -53,8 +52,13 @@ const FormStatusDialog: React.FC<FormStatusDialogProps> = ({
             </DialogDescription>{' '}
           </div>
           <DialogClose asChild>
-            <Button className='max-25.625 bg-primary-200 md:text-md mx-auto mt-6 mb-6 text-sm font-bold whitespace-nowrap text-neutral-950'>
-              {loading ? 'Sending...' : 'Back to Home'}
+            <Button
+              asChild
+              className='max-25.625 bg-primary-200 md:text-md mx-auto mt-6 mb-6 text-sm font-bold whitespace-nowrap text-neutral-950'
+            >
+              <Link href={variant === 'success' ? '#hero' : '#contact'}>
+                {variant === 'success' ? 'Back to Home' : 'Try Again'}
+              </Link>
             </Button>
           </DialogClose>
         </DialogBody>

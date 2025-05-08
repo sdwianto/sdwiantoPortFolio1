@@ -226,7 +226,6 @@ const Contact = () => {
           </Form>
           <FormStatusDialog
             open={showDialog}
-            loading={loading}
             variant={variant}
             onOpenChange={setShowDialog}
           />

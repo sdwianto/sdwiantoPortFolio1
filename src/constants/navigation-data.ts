@@ -16,10 +16,7 @@ export const navigationData: Navigation[] = [
     label: 'About',
     href: '#about',
   },
-  {
-    label: 'Skills',
-    href: '#skills',
-  },
+
   {
     label: 'Working',
     href: '#working',
