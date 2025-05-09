@@ -120,13 +120,13 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
         <>
           <div className='hidden md:block'></div>
           <div className='hidden md:ml-16 md:block'>
-            <ExperienceCard {...experience} />
+            <ExperienceCard {...experience} inView={inView} />
           </div>
         </>
       ) : (
         <>
           <div className='hidden md:mr-16 md:block'>
-            <ExperienceCard {...experience} />
+            <ExperienceCard {...experience} inView={inView} />
           </div>
           <div className='hidden md:block'></div>
         </>
@@ -143,7 +143,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
             {index + 1}
           </motion.div>
           <div className='ml-12 flex flex-col'>
-            <ExperienceCard {...experience} />
+            <ExperienceCard {...experience} inView={inView} />
           </div>
         </div>
       </div>
@@ -157,6 +157,7 @@ type CardProps = {
   imageSrc: StaticImageData;
   title: string;
   description: string;
+  inView?: boolean;
 };
 
 export const ExperienceCard: React.FC<CardProps> = ({
@@ -165,9 +166,15 @@ export const ExperienceCard: React.FC<CardProps> = ({
   id,
   title,
   description,
+  inView,
 }) => {
   return (
-    <div className='flex flex-col gap-4 rounded-3xl border border-neutral-800 p-4'>
+    <motion.div
+      initial={{ scale: 0 }}
+      animate={inView ? { scale: 1 } : {}}
+      transition={{ duration: 2, delay: 0.2 }}
+      className='flex flex-col gap-4 rounded-3xl border border-neutral-800 p-4'
+    >
       <div className='flex flex-wrap justify-between'>
         <div className='flex flex-col items-start gap-2'>
           <h3 className='md:text-lg-medium text-sm-regular mt-4 text-neutral-400'>
@@ -182,6 +189,6 @@ export const ExperienceCard: React.FC<CardProps> = ({
       <p className='text-md-regular mt-2 text-start text-neutral-400'>
         {description}
       </p>
-    </div>
+    </motion.div>
   );
 };
