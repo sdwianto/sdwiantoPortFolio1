@@ -29,7 +29,7 @@ export default Experience;
 
 const ExperienceCards: React.FC = () => {
   return (
-    <div className='relative grid grid-cols-2 gap-x-10 gap-y-14 p-4 md:gap-y-20'>
+    <div className='relative grid grid-cols-2 gap-x-10 gap-y-4 p-4 md:gap-y-0'>
       {experienceData.map((experience, index) => (
         <ExperienceItem
           key={experience.id}
@@ -71,7 +71,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   });
   useEffect(() => {
     if (inView) {
-      controls.start({ height: 'calc(100% + 4rem)' });
+      controls.start({ height: 'calc(100%)' });
     } else {
       controls.start({ height: 0 });
     }
@@ -100,7 +100,9 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
             'left-0 w-full bg-neutral-800 md:block',
             'w-[1px] md:w-px'
           )}
-          style={{ top: '50%', height: '100%' }}
+          style={{
+            top: '50%',
+          }}
         />
       )}
       {/* Badge Desktop */}
