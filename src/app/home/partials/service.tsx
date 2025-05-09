@@ -2,12 +2,30 @@
 
 import { Icon } from '@iconify/react';
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
 import Section from '@/components/layouts/section';
 
 import { servicesExpertise } from '@/constants/service-expertise';
 
 const Services = () => {
+  const [serviceCards] = useState(servicesExpertise);
+  const [viewportKey, setViewportKey] = useState(0);
+
+  useEffect(() => {
+    const handleViewportChange = () => {
+      setViewportKey((prev) => prev + 1);
+    };
+
+    window.addEventListener('resize', handleViewportChange);
+    window.addEventListener('pagehide', handleViewportChange);
+
+    return () => {
+      window.removeEventListener('resize', handleViewportChange);
+      window.removeEventListener('pagehide', handleViewportChange);
+    };
+  }, []);
+
   return (
     <Section
       label='SERVICE'
@@ -20,8 +38,8 @@ const Services = () => {
       titleClassName='display-md-extrabold md:display-2xl-extrabold text-neutral-25 md:mt-2 md:w-120'
       desctriptionClassName='md:text-xl-medium text-md-medium md:text-right text-neutral-400 md:w-126 w-full md:py-6'
     >
-      <ServiceCards>
-        {servicesExpertise.map((service: any, index: number) => (
+      <ServiceCards key={viewportKey}>
+        {serviceCards.map((service, index) => (
           <ServiceCard
             key={service.cardNumber}
             index={index}
@@ -59,7 +77,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6, delay: index * 0.2, ease: 'easeOut' }}
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: false, amount: 0.3 }}
       className='bg-base-black hover:shadow-primary-200 flex-1 basis-80 gap-4 shadow-md md:gap-6'
     >
       <p className='md:text-xl-semibold text-md-semibold text-neutral-400'>
