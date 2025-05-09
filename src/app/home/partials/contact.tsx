@@ -103,7 +103,7 @@ const Contact = () => {
         </div>
 
         <Link href='#home'>
-          <div className='group absolute z-11 mt-[-140] ml-14 cursor-pointer gap-4 md:mt-[-42] md:mb-26.5 md:ml-20.5 md:items-center md:justify-center'>
+          <div className='group absolute z-11 mt-[-140] ml-30 cursor-pointer gap-4 md:mt-[-42] md:mb-26.5 md:ml-20.5 md:items-center md:justify-center'>
             <div className='flex flex-wrap gap-4'>
               {['Dribble', 'Instagram', 'Linkedin'].map((platform) => (
                 <Image
@@ -112,7 +112,7 @@ const Contact = () => {
                   alt={platform.toLowerCase()}
                   width='64'
                   height='64'
-                  className='group-hover:drop-shadow-[0_0_4px_theme(colors.primary.300)] h-12 w-12 transition-all group-hover:brightness-100 group-hover:invert group-hover:sepia md:h-16 md:w-16'
+                  className='group-hover:drop-shadow-[0_0_4px_theme(colors.primary.300)] h-12 w-12 transition-all group-hover:brightness-100 group-hover:grayscale group-hover:sepia md:h-16 md:w-16'
                 />
               ))}
             </div>
