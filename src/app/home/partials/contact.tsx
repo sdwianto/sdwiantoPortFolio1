@@ -103,7 +103,7 @@ const Contact = () => {
         </div>
 
         <Link href='#home'>
-          <div className='group absolute z-11 mt-[-140] ml-30 cursor-pointer gap-4 md:mt-[-42] md:mb-26.5 md:ml-20.5 md:items-center md:justify-center'>
+          <div className='group absolute z-11 mt-[-140] ml-24 cursor-pointer gap-4 md:mt-[-42] md:mb-26.5 md:ml-20.5 md:items-center md:justify-center'>
             <div className='flex flex-wrap gap-4'>
               {['Dribble', 'Instagram', 'Linkedin'].map((platform) => (
                 <Image
