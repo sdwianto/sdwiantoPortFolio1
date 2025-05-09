@@ -27,12 +27,13 @@ const Skill = () => {
     const observer = new IntersectionObserver(([entry]) => {
       setIsInView(entry.isIntersecting);
     });
-    if (skillRef.current) {
-      observer.observe(skillRef.current);
+    const currentRef = skillRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
     return () => {
-      if (skillRef.current) {
-        observer.unobserve(skillRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -48,7 +49,7 @@ const Skill = () => {
             return value;
           })
         );
-      }, 30);
+      }, 50);
     }
     return () => {
       if (interval) clearInterval(interval);
@@ -57,7 +58,7 @@ const Skill = () => {
   return (
     <div
       ref={skillRef}
-      className='custom-container flex flex-wrap items-center gap-10 px-4 py-40 md:gap-14.5 md:px-32 md:py-20'
+      className='custom-container flex flex-wrap items-center gap-10 px-4 py-40 md:gap-14.5 md:py-20'
       id='skills'
     >
       {/* Left Section */}

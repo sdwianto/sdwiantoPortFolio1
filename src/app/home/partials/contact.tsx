@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { ClipLoader } from 'react-spinners';
@@ -100,47 +101,40 @@ const Contact = () => {
           <div className='absolute inset-0 z-10 bg-gradient-to-t from-stone-950 to-transparent' />
           <div className='from-base-black absolute inset-x-0 bottom-0 z-10 h-[60%] bg-gradient-to-t to-transparent' />
         </div>
-        <div className='absolute z-11 mt-[-140] ml-24 gap-4 md:mt-[-42] md:mb-26.5 md:ml-20.5 md:items-center md:justify-center'>
-          <div className='flex flex-wrap'>
-            <Image
-              src={'/icons/Dribble.svg'}
-              alt='drible'
-              width='64'
-              height='64'
-              className='h-12 w-12 md:h-16 md:w-16'
-            />
-            <Image
-              src={'/icons/Instagram.svg'}
-              alt='instagram'
-              width='64'
-              height='64'
-              className='h-12 w-12 md:h-16 md:w-16'
-            />
-            <Image
-              src={'/icons/Linkedin.svg'}
-              alt='linkedin'
-              width='64'
-              height='64'
-              className='h-12 w-12 md:h-16 md:w-16'
-            />
-          </div>
-          <div className='start-center items-center justify-center text-center'>
-            <p className='md:text-xl-bold text-md-bold text-base-white md:gap-1'>
-              Edwin Anderson
-            </p>
-            <div className='flex-center flex items-center gap-3'>
-              <Icon
-                icon='ion:ellipse'
-                width='12'
-                height='12'
-                className='text-primary-200'
-              />
-              <p className='md:text-md-semibold text-sm-text-sm-semibold text-neutral-400'>
-                Available for work
+
+        <Link href='#home'>
+          <div className='group absolute z-11 mt-[-140] ml-14 cursor-pointer gap-4 md:mt-[-42] md:mb-26.5 md:ml-20.5 md:items-center md:justify-center'>
+            <div className='flex flex-wrap gap-4'>
+              {['Dribble', 'Instagram', 'Linkedin'].map((platform) => (
+                <Image
+                  key={platform}
+                  src={`/icons/${platform}.svg`}
+                  alt={platform.toLowerCase()}
+                  width='64'
+                  height='64'
+                  className='group-hover:drop-shadow-[0_0_4px_theme(colors.primary.300)] h-12 w-12 transition-all group-hover:brightness-100 group-hover:invert group-hover:sepia md:h-16 md:w-16'
+                />
+              ))}
+            </div>
+
+            <div className='start-center mt-4 items-center justify-center text-center'>
+              <p className='md:text-xl-bold text-md-bold text-base-white group-hover:text-primary-300 transition-colors md:gap-1'>
+                Singgih Dwianto
               </p>
+              <div className='flex-center flex items-center gap-3'>
+                <Icon
+                  icon='ion:ellipse'
+                  width='12'
+                  height='12'
+                  className='text-primary-200'
+                />
+                <p className='md:text-md-semibold text-sm-semibold group-hover:text-primary-300 text-neutral-400 transition-colors'>
+                  Available for work
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
 
       <div className='flex-[7.6] basis-80 flex-wrap gap-2 md:text-left'>

@@ -39,13 +39,13 @@ const ExperienceCards: React.FC = () => {
         />
       ))}
       {/* boxes */}
-      <div className='absolute right-[-32px] bottom-[-64px] z-20 md:right-[-148px] md:bottom-[-48px]'>
+      <div className='absolute right-[-16px] bottom-[-64px] z-20 md:right-[-148px] md:bottom-[-48px]'>
         <Image
           src={'/icons/3boxes.svg'}
           alt='drible'
           width='138'
           height='92'
-          className='h-[69px] w-[103.5px] rotate-[270deg] md:h-[92px] md:w-[138px]'
+          className='h-[59px] w-[93.5px] rotate-[270deg] md:h-[92px] md:w-[138px]'
         />
       </div>
     </div>

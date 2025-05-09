@@ -131,7 +131,7 @@ const FaqCard: React.FC<CardProps> = ({
     threshold: 0.1,
   });
 
-  const xInitial = direction === 'left' ? -150 : 150;
+  const xInitial = direction === 'left' ? 15 : -15;
 
   return (
     <motion.div

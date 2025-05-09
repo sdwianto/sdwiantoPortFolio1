@@ -17,7 +17,7 @@ const Hero = () => {
         <div className='mt-10 flex items-center gap-2 md:gap-4'>
           <div className='border-neutral-25 w-5.25 border-t md:w-28.5'></div>
           <p className='text-neutral-25 text-md-medium md:text-xl-medium'>
-            Hi, I am Edwin Anderson Frontend Developer
+            Hi, I am Singgih Dwianto Frontend Developer
           </p>
         </div>
         <div className='gap-4'>
@@ -87,7 +87,7 @@ const Hero = () => {
         <div className='from-base-black absolute inset-0 z-15 bg-gradient-to-t to-transparent' />
         <div className='from-base-black absolute inset-x-0 bottom-0 z-15 h-[60%] bg-gradient-to-t to-transparent' />
         {/* rating */}
-        <div className='absolute inset-x-4 top-81 z-30 mb-10 gap-2 rounded-3xl border border-neutral-800 p-5 md:inset-x-auto md:top-153 md:right-0 md:mr-40 md:mb-[36px] md:w-fit'>
+        <div className='hover:border-primary-200 absolute inset-x-4 top-81 z-30 mb-10 gap-2 rounded-3xl border border-neutral-800 p-5 transition duration-300 md:inset-x-auto md:top-153 md:right-0 md:mr-40 md:mb-[36px] md:w-fit'>
           <p className='md:display-xl-bold display-xs-bold text-neutral-25'>
             5.0
           </p>

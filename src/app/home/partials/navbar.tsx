@@ -32,16 +32,15 @@ const Navbar = () => {
         background,
         backdropFilter: backdropBlur,
       }}
-      className='fixed top-0 z-50 w-full'
+      className='fixed top-0 right-0 left-0 z-50 w-full'
     >
-      <div className='flex-between custom-container h-20 w-full border-b border-neutral-800'>
+      <div className='flex-between custom-container h-20'>
         <div className='flex items-center gap-2 p-4'>
           <div className='border-base-white w-6 border-t md:w-10'></div>
           <span className='text-primary-200 text-md-bold md:text-xl-bold'>
-            Edwin Anderson
+            Singgih Dwianto
           </span>
         </div>
-
         <nav className='hidden lg:block'>
           <ul className='flex-start gap-8'>
             {navigationData.map((data) => (
@@ -56,6 +55,7 @@ const Navbar = () => {
             ))}
           </ul>{' '}
         </nav>
+
         <Sheet>
           <SheetTrigger asChild>
             <Icon

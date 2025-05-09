@@ -37,6 +37,7 @@ const Working = () => {
                 alt='working-with-me'
                 width={80}
                 height={80}
+                className='hover:shadow-primary-200 h-15 w-15 hover:shadow-md md:h-20 md:w-20'
               />
             </div>
             {workingWithMe.map((working: { title: string }) => (
@@ -67,6 +68,7 @@ const Working = () => {
                 alt='another-talent'
                 width={80}
                 height={80}
+                className='h-15 w-15 hover:shadow-md hover:shadow-red-500 md:h-20 md:w-20'
               />
             </div>
             {anotherTalent.map((working: { title: string }) => (
@@ -87,7 +89,12 @@ const Working = () => {
         asChild
         className='md:px-21.875 text-sm-bold md:text-md-bold bg-primary-200 mx-auto mt-0 mb-30 w-full text-neutral-950 md:mt-12 md:mb-20 md:w-fit'
       >
-        <Link href='#contact'>HIRE ME</Link>
+        <Link
+          href='#contact'
+          className='text-sm-bold md:text-md-bold whitespace-nowrap'
+        >
+          HIRE ME
+        </Link>
       </Button>
     </Section>
   );

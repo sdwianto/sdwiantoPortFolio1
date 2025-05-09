@@ -195,7 +195,7 @@ function CarouselPrevious(props: React.ComponentProps<typeof Button>) {
 }
 
 function CarouselNext(props: React.ComponentProps<typeof Button>) {
-  const { scrollNext, canScrollNext } = useCarousel();
+  const { scrollNext, canScrollNext, canScrollPrev } = useCarousel();
 
   return (
     <Button
@@ -204,7 +204,7 @@ function CarouselNext(props: React.ComponentProps<typeof Button>) {
       size='icon'
       disabled={!canScrollNext}
       onClick={scrollNext}
-      className='hover:text-primary-200 text-neutral-800 transition-colors duration-200'
+      className={`text-${canScrollPrev ? 'neutral-800' : 'primary-200'} hover:text-primary-200 transition-colors duration-200`}
       {...props}
     >
       <ChevronRight />

@@ -8,7 +8,7 @@ import Footer from './home/partials/footer';
 import Hero from './home/partials/hero';
 import Navbar from './home/partials/navbar';
 import Portfolio from './home/partials/portfolio';
-import Service from './home/partials/services';
+import Service from './home/partials/service';
 import Skill from './home/partials/skill';
 import Testimonials from './home/partials/testimonials';
 import Working from './home/partials/working';
