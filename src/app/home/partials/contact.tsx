@@ -75,10 +75,10 @@ const Contact = () => {
   }
   return (
     <div
-      className='custom-container relative flex flex-wrap items-center gap-10 px-4 py-40 md:gap-30.5 md:px-32 md:pt-20 md:pb-30'
+      className='custom-container relative flex flex-wrap items-center gap-10 px-4 pb-15 md:gap-30.5 md:px-32 md:pt-20 md:pb-30'
       id='contact'
     >
-      {/* boxes */}
+      {/* boxes1 */}
       <div className='absolute top-0 left-0 z-20 md:top-0 md:left-0'>
         <Image
           src={'/icons/3boxes.svg'}
@@ -86,6 +86,16 @@ const Contact = () => {
           width='138'
           height='92'
           className='h-[69px] w-[103.5px] rotate-[180deg] md:h-[92px] md:w-[138px]'
+        />
+      </div>
+      {/* boxes2 */}
+      <div className='absolute right-[-4] bottom-[0] z-20 md:right-[30] md:bottom-[0]'>
+        <Image
+          src={'/icons/3boxes.svg'}
+          alt='drible'
+          width='138'
+          height='92'
+          className='h-[59px] w-[93.5px] md:h-[92px] md:w-[138px]'
         />
       </div>
       <div className='flex-[2.4] basis-80'>
