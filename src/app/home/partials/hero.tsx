@@ -1,3 +1,5 @@
+
+
 import { Icon } from '@iconify/react/dist/iconify.js';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -33,7 +35,7 @@ const Hero = () => {
         </div>
         <Button
           asChild
-          className='md:px-29.375 text-sm-extrabold md:text-md-bold bg-primary-200 my-10 mt-10 w-full whitespace-nowrap text-neutral-950 md:mt-15 md:mb-40.75 md:w-fit'
+          className='md:px-29.375 text-sm font-bold md:text-md-bold bg-primary-200 my-10 mt-10 w-full whitespace-nowrap text-neutral-950 md:mt-15 md:mb-40.75 md:w-fit mb-12'
         >
           <Link href='#contact'>HIRE ME</Link>
         </Button>
@@ -63,13 +65,13 @@ const Hero = () => {
       />
       {/* profile image */}
       <div
-        className='relative mx-auto w-full max-w-[41.25rem] overflow-hidden md:absolute md:top-0 md:right-0'
+        className='relative mx-auto w-full max-w-[41.25rem] overflow-hidden md:absolute top-0 right-0'
         style={{
           height: 'clamp(29.13rem, 58.57vw, 55.06rem)',
         }}
       >
-        <div className='from-primary-200 to-base-black absolute top-0 right-0 z-0 h-full w-1/2 bg-gradient-to-b' />
 
+        <div className='from-primary-200 to-base-black absolute top-0 right-0 z-0 h-full w-1/2 bg-gradient-to-b' />
         <Image
           src='/images/Young-Man.png'
           alt='hero'

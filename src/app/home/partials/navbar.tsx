@@ -30,9 +30,9 @@ const Navbar = () => {
     <motion.header
       style={{
         background,
-        backdropFilter: backdropBlur,
+        backdropFilter: backdropBlur
       }}
-      className='fixed top-0 right-0 left-0 z-50 w-full'
+      className='fixed top-0 right-0 left-0 z-50 w-full border-neutral-800 border-b '
     >
       <div className='flex-between custom-container h-20'>
         <div className='flex items-center gap-2 p-4'>

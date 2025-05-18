@@ -14,7 +14,7 @@ function Progress({ className, value, label, ...props }: CustomProgressProps) {
   return (
     <ProgressPrimitive.Root
       data-slot='progress'
-      className={cn('relative h-16 w-full overflow-visible', className)}
+      className={cn('relative md:h-16 h-8 w-full', className)}
       {...props}
     >
       {/* Track (garis 1px di tengah) */}
@@ -23,12 +23,13 @@ function Progress({ className, value, label, ...props }: CustomProgressProps) {
       {/* Progress Indicator */}
       <ProgressPrimitive.Indicator
         data-slot='progress-indicator'
-        className='bg-primary-300 absolute top-1/2 left-0 z-10 flex h-16 -translate-y-1/2 items-center rounded-2xl bg-[repeating-linear-gradient(55deg,#717680_0px,#717680_1px,#396600_1px,#396600_20px)] px-4 transition-all'
+        className='bg-primary-300 absolute top-1/2 left-0 z-10 flex md:h-16 -translate-y-1/2 items-center md:rounded-3xl rounded-xl 
+        md:bg-[repeating-linear-gradient(65deg,#5e6951_0px,#5e6951_1px,#396600_1px,#396600_16px)] bg-[repeating-linear-gradient(65deg,#5e6951_0px,#5e6951_1px,#396600_1px,#396600_12px)] transition-all h-10 md:px-6 md:py-2 px-6 py-1.5'
         style={{ width: `${value || 0}%` }}
       >
         {/* Label inside the indicator */}
         {label && (
-          <span className='md:text-lg-semibold text-sm-semibold text-neutral-25 absolute top-1/2 left-4 z-20 -translate-y-1/2'>
+          <span className='md:text-lg-semibold text-sm font-semibold text-neutral-25 absolute top-1/2  z-20 -translate-y-1/2 '>
             {label}
           </span>
         )}

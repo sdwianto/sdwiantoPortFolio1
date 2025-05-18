@@ -31,7 +31,7 @@ const AboutMe = () => {
           alt='drible'
           width='138'
           height='92'
-          className='absolute bottom-4 left-0 z-20 h-[69px] w-[103.5px] rotate-[90deg] md:bottom-[24] md:left-[-20px] md:h-[92px] md:w-[138px]'
+          className='absolute bottom-4 left-[-18] z-20 h-[69px] w-[103.5px] rotate-[90deg] md:bottom-[24] md:left-[-60px] md:h-[92px] md:w-[138px]'
         />
         <p className='text-md-medium md:text-xl-medium mt-4 text-center text-neutral-400 md:mt-16'>
           I love turning designs into interactive, high-performance websites.

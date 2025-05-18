@@ -144,7 +144,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
           >
             {index + 1}
           </motion.div>
-          <div className='ml-12 flex flex-col'>
+          <div className='ml-9 flex flex-col'>
             <ExperienceCard {...experience} inView={inView} />
           </div>
         </div>

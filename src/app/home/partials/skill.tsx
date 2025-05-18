@@ -58,7 +58,7 @@ const Skill = () => {
   return (
     <div
       ref={skillRef}
-      className='custom-container flex flex-wrap items-center gap-10 px-4 py-40 md:gap-14.5 md:py-20'
+      className='custom-container flex flex-wrap items-center gap-10 px-4 py-20 md:gap-14.5 md:py-20'
       id='skills'
     >
       {/* Left Section */}
@@ -128,7 +128,7 @@ const Skill = () => {
       <div className='flex-[5.8] basis-80 space-y-6'>
         {progressData.map((item, i) => (
           <div key={item.id} className='w-full'>
-            <div className='flex-between text-base-white md:text-xl-semibold text-sm-semibold flex justify-center gap-6'>
+            <div className='flex-between text-base-white flex justify-center gap-6 text-left text-sm font-semibold md:text-left md:text-xl'>
               <Progress value={progressValues[i]} label={item.label} />{' '}
               <div>{progressValues[i]}%</div>
             </div>

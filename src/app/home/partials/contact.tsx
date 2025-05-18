@@ -138,8 +138,10 @@ const Contact = () => {
       </div>
 
       <div className='flex-[7.6] basis-80 flex-wrap gap-2 md:text-left'>
-        <div>
-          <p className='text-sm-medium md:text-md-medium'>CONTACT</p>
+        <div className='px-0 md:px-6'>
+          <p className='text-primary-200 text-md-medium md:text-lg-medium'>
+            CONTACT
+          </p>
           <h1 className='display-md-extrabold md:display-2xl-extrabold text-neutral-25 md:mt-2'>
             LET’S GET IN TOUCH
           </h1>{' '}
@@ -155,7 +157,7 @@ const Contact = () => {
                 name='name'
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className='text-neutral-25 md:text-md-semibold text-sm-semibold'>
+                    <FormLabel className='text-neutral-25 md:text-md-semibold text-sm-semibold mb-2'>
                       Name
                     </FormLabel>
                     <Input
@@ -174,7 +176,7 @@ const Contact = () => {
                 name='email'
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className='text-neutral-25 md:text-md-semibold text-sm-semibold'>
+                    <FormLabel className='text-neutral-25 md:text-md-semibold text-sm-semibold mb-2'>
                       Email
                     </FormLabel>
                     <Input
@@ -193,7 +195,7 @@ const Contact = () => {
                 name='message'
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className='text-neutral-25 md:text-md-semibold text-sm-semibold'>
+                    <FormLabel className='text-neutral-25 md:text-md-semibold text-sm-semibold mb-2'>
                       Message
                     </FormLabel>
                     <Textarea
@@ -208,7 +210,7 @@ const Contact = () => {
               />
               <Button
                 disabled={loading}
-                className='bg-primary-200 md:text-md-bold text-sm-bold mt-6 w-full p-2 text-neutral-950 md:mt-10'
+                className='bg-primary-200 md:text-md mt-4 w-full p-2 text-sm font-bold text-neutral-950 md:mt-10'
               >
                 {loading ? (
                   <ClipLoader size={20} color='neutral-800' />

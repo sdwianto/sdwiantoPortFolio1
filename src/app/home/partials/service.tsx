@@ -1,12 +1,15 @@
 'use client';
 
-import { Icon } from '@iconify/react';
+
+import { Icon } from '@iconify/react/dist/iconify.js';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
 import Section from '@/components/layouts/section';
 
 import { servicesExpertise } from '@/constants/service-expertise';
+
+
 
 const Services = () => {
   const [serviceCards] = useState(servicesExpertise);
@@ -80,10 +83,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       viewport={{ once: false, amount: 0.3 }}
       className='bg-base-black hover:shadow-primary-200 flex-1 basis-80 gap-4 shadow-md md:gap-6'
     >
-      <p className='md:text-xl-semibold text-md-semibold text-neutral-400'>
+      <p className='md:text-xl-semibold text-md-semibold text-neutral-400 mb-3'>
         {cardNumber}
       </p>
-      <div className='mt:3 w-full border-t border-neutral-800 md:mt-6'></div>
+      <div className='w-full border-t border-neutral-800 md:mt-6'></div>
       <Icon
         icon='majesticons:monitor-line'
         width='32'
