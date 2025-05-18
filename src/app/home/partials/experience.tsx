@@ -172,7 +172,7 @@ export const ExperienceCard: React.FC<CardProps> = ({
 }) => {
   return (
     <motion.div
-      initial={{ scale: 0 }}
+      initial={{ scale: 0.85 }}
       animate={inView ? { scale: 1 } : {}}
       transition={{ duration: 2, delay: 0.2 }}
       className='flex flex-col gap-4 rounded-3xl border border-neutral-800 p-4'

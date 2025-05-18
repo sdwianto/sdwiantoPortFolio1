@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className='mt-[-100] border-t border-neutral-800 md:mt-0'>
       <div className='custom-container flex h-16 items-center justify-center md:h-20'>
         {/* boxes */}
-        <div className='absolute right-[0] bottom-[-15524] z-20 md:right-[214] md:bottom-[-9300]'>
+        <div className='absolute right-[0] bottom-[-14780] z-20 md:right-[214] md:bottom-[-9300]'>
           <Image
             src={'/icons/3boxes.svg'}
             alt='drible'
